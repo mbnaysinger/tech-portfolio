@@ -4,7 +4,7 @@ import React from "react";
 import Image from "next/image";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
-import { ExternalLink, Github, Play } from "lucide-react";
+import { GithubIcon, Play } from "lucide-react";
 
 const ProjectsSection = () => {
   const projects = [
@@ -143,7 +143,7 @@ const ProjectsSection = () => {
                     aria-label={`Ver código do projeto ${project.title} no GitHub`}
                     className="flex-1"
                   >
-                    <Github size={16} className="mr-2" />
+                    <GithubIcon size={16} className="mr-2" />
                     Código
                   </Button>
                 </div>
@@ -169,7 +169,7 @@ const ProjectsSection = () => {
             size="lg"
             aria-label="Ver mais projetos no GitHub"
           >
-            <Github size={20} className="mr-2" />
+            <GithubIcon size={20} className="mr-2" />
             Ver Mais Projetos
           </Button>
         </div>

@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
-import { Mail, Phone, MapPin, Linkedin, Github, Twitter, Send } from "lucide-react";
+import { Mail, Phone, MapPin, Linkedin, GithubIcon, Twitter, Send } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -56,7 +56,7 @@ const ContactSection = () => {
       href: "https://linkedin.com/in/seu-perfil",
     },
     {
-      icon: <Github size={24} />,
+      icon: <GithubIcon size={24} />,
       label: "GitHub",
       href: "https://github.com/seu-usuario",
     },

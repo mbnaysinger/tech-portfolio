@@ -62,15 +62,15 @@ const ContactSection = () => {
             Entre em <span className="text-accent">Contato</span>
           </Heading>
           <p className="text-text-light/80 mt-4 max-w-2xl mx-auto">
-            Vamos trabalhar juntos! Entre em contato para discutir projetos, 
+            Entre em contato para discutir projetos, 
             oportunidades ou apenas para bater um papo sobre tecnologia.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 lg:grid-cols-1 gap-12">
           {/* Informações de contato */}
-          <div className="space-y-8">
-            <div>
+          {/* <div className="space-y-8">
+            /* <div>
               <h3 className="text-2xl font-bold text-text-light mb-6">
                 Informações de Contato
               </h3>
@@ -92,10 +92,10 @@ const ContactSection = () => {
                   </a>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             {/* Links sociais */}
-            <div>
+            {/* <div>
               <h3 className="text-2xl font-bold text-text-light mb-6">
                 Redes Sociais
               </h3>
@@ -103,7 +103,7 @@ const ContactSection = () => {
                 <SocialLinks />
               </div>
             </div>
-          </div>
+          </div> */}
 
           {/* Formulário de contato */}
           <div className="space-y-6">

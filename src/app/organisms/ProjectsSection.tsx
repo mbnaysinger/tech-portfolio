@@ -11,55 +11,55 @@ const ProjectsSection = () => {
     {
       title: "E-commerce Platform",
       description: "Plataforma completa de e-commerce com carrinho de compras, pagamentos, painel administrativo e sistema de usuários.",
-      image: "/project1.webp",
+      image: "/project.jpg",
       technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-      demoUrl: "https://demo-ecommerce.com",
-      githubUrl: "https://github.com/user/ecommerce",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: true,
     },
     {
       title: "Task Management App",
       description: "Aplicação de gerenciamento de tarefas com drag-and-drop, notificações em tempo real e colaboração em equipe.",
-      image: "/project2.webp",
+      image: "/project.jpg",
       technologies: ["React", "Socket.io", "Express", "PostgreSQL", "Redis"],
-      demoUrl: "https://task-app-demo.com",
-      githubUrl: "https://github.com/user/task-app",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: true,
     },
     {
       title: "Portfolio Website",
       description: "Site portfólio responsivo com animações, SEO otimizado e performance de alta qualidade.",
-      image: "/project3.webp",
+      image: "/project.jpg",
       technologies: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Vercel"],
-      demoUrl: "https://portfolio-demo.com",
-      githubUrl: "https://github.com/user/portfolio",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: false,
     },
     {
       title: "Weather Dashboard",
       description: "Dashboard meteorológico com dados em tempo real, gráficos interativos e previsões detalhadas.",
-      image: "/project4.webp",
+      image: "/project.jpg",
       technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Vite", "Netlify"],
-      demoUrl: "https://weather-dashboard.com",
-      githubUrl: "https://github.com/user/weather-app",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: false,
     },
     {
       title: "Social Media Clone",
       description: "Clone de rede social com feed, posts, comentários, likes e sistema de seguidores.",
-      image: "/project5.webp",
+      image: "/project.jpg",
       technologies: ["React Native", "Firebase", "Redux", "Expo", "Google Auth"],
-      demoUrl: "https://social-app-demo.com",
-      githubUrl: "https://github.com/user/social-app",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: false,
     },
     {
       title: "AI Chat Assistant",
       description: "Assistente de chat com IA integrada, processamento de linguagem natural e interface conversacional.",
-      image: "/project6.webp",
+      image: "/project.jpg",
       technologies: ["React", "OpenAI API", "Node.js", "WebSocket", "Docker"],
-      demoUrl: "https://ai-chat-demo.com",
-      githubUrl: "https://github.com/user/ai-chat",
+      demoUrl: "/",
+      githubUrl: "/",
       featured: false,
     },
   ];
@@ -164,7 +164,7 @@ const ProjectsSection = () => {
         {/* CTA para mais projetos */}
         <div className="text-center mt-16">
           <Button
-            href="https://github.com/user"
+            href="https://github.com/mbnaysinger"
             variant="outline"
             size="lg"
             aria-label="Ver mais projetos no GitHub"

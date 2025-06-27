@@ -2,20 +2,22 @@
   "hero": {
     "greeting": "Olá, me chamo",
     "name": "Maike",
-    "title": "Arquiteto e Desenvolvedor Full-Stack.",
+    "title": "Arquiteto de Soluções e Desenvolvedor Full-Stack",
     "downloadCV": "Baixar CV"
   },
   "about": {
     "title": "Sobre",
     "highlight": "Mim",
-    "description": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras e experiências de usuário excepcionais. Com experiência em tecnologias modernas, busco sempre aprender e evoluir.",
-    "paragraph1": "Trabalho com React, Node.js, TypeScript e outras tecnologias para construir aplicações web escaláveis e performáticas. Acredito que código limpo e bem estruturado é fundamental para o sucesso de qualquer projeto.",
-    "paragraph2": "Quando não estou codificando, gosto de contribuir para a comunidade open-source, participar de hackathons e compartilhar conhecimento através de artigos e palestras.",
+    "description": "Gremista e fã de esportes a motor, no meio tech sou apaixonado por construir soluções digitais robustas, escaláveis e de alto impacto. Minha trajetória é marcada pela versatilidade e pela capacidade de transitar por todo o ciclo de vida do desenvolvimento de software, da concepção arquitetural à entrega contínua e otimização em produção.",
+    "paragraph1": "<strong>Desenvolvimento Backend & Frontend:</strong> Proficiência em ecossistemas modernos como <strong>Java</strong> (com Spring Boot, Quarkus, WebMVC, WebFlux para arquiteturas de microserviços e reativas), <strong>Node.js</strong> (NestJS, Fastify para alta performance) e <strong>PHP</strong> (Laravel para soluções web completas). No frontend, desenvolvo interfaces ricas e dinâmicas com <strong>React</strong> e <strong>Next.js</strong>.",
+    "paragraph2": "<strong>Dados e Persistência:</strong> Experiência sólida com bancos de dados relacionais (MySQL, PostgreSQL, Oracle), NoSQL (MongoDB, CosmosDB) e soluções de caching (Redis), garantindo performance e integridade dos dados.",
+    "paragraph3": "<strong>Cloud & DevOps Engineering:</strong> Conhecimento em infraestrutura e automação na <strong>Azure</strong>, com atuação em CI/CD (Jenkins), orquestração e gerenciamento de contêineres (Docker, Kubernetes, Rancher) e monitoramento (Grafana). Domino também o gerenciamento de código (Bitbucket, GitHub) e soluções de identidade e acesso (Keycloak).",
+    "paragraph4": "Além do código, atuo como <strong>líder e estrategista</strong>, impulsionando equipes através de metodologias ágeis como Scrum e Kanban. Minha experiência como Gestor de Projetos de TI e Product Owner me permite não apenas arquitetar e desenvolver sistemas, mas também traduzir requisitos de negócio complexos em entregas de valor tangíveis, focando na inovação e na otimização de processos.",
     "stats": {
       "experience": "Anos de Experiência",
       "projects": "Projetos Concluídos",
       "technologies": "Tecnologias Dominadas",
-      "satisfaction": "Satisfação do Cliente"
+      "satisfaction": "Voltado para soluções de IA"
     },
     "personalInfo": {
       "title": "Informações Pessoais",

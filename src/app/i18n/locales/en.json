@@ -9,8 +9,10 @@
     "title": "About",
     "highlight": "Me",
     "description": "I'm a full-stack developer passionate about creating innovative digital solutions and exceptional user experiences. With experience in modern technologies, I always seek to learn and evolve.",
-    "paragraph1": "I work with React, Node.js, TypeScript and other technologies to build scalable and performant web applications. I believe that clean and well-structured code is fundamental to the success of any project.",
-    "paragraph2": "When I'm not coding, I like to contribute to the open-source community, participate in hackathons and share knowledge through articles and talks.",
+    "paragraph1": "<strong>Backend & Frontend Development:</strong> I work with React, Node.js, TypeScript and other technologies to build scalable and performant web applications. I believe that clean and well-structured code is fundamental to the success of any project.",
+    "paragraph2": "<strong>Data & Persistence:</strong> Experience with relational databases, NoSQL solutions and caching systems, ensuring data performance and integrity.",
+    "paragraph3": "<strong>Cloud & DevOps Engineering:</strong> Specialist in infrastructure and automation, with strong experience in CI/CD, container orchestration and monitoring solutions.",
+    "paragraph4": "When I'm not coding, I like to contribute to the open-source community, participate in hackathons and share knowledge through articles and talks.",
     "stats": {
       "experience": "Years of Experience",
       "projects": "Completed Projects",

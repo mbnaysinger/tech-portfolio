@@ -97,7 +97,7 @@ const ExperienceSection = () => {
         </div>
 
         {/* Estatísticas de carreira */}
-        <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
+        {/* <div className="mt-16 grid grid-cols-1 md:grid-cols-4 gap-6">
           <div className="text-center p-6 rounded-xl bg-white/5 backdrop-blur-glass border border-white/10">
             <div className="text-3xl font-bold text-accent mb-2">4</div>
             <div className="text-text-light/70">Empresas</div>
@@ -117,7 +117,7 @@ const ExperienceSection = () => {
             <div className="text-3xl font-bold text-accent mb-2">100%</div>
             <div className="text-text-light/70">Satisfação</div>
           </div>
-        </div>
+        </div> */}
       </div>
     </section>
   );

@@ -14,32 +14,32 @@ const EducationSection = () => {
       institution: "Universidade Luterana do Brasil",
       period: "2013 - 2019",
       location: "Canoas, RS",
-      description: "Formação completa em arquitetura com foco em design sustentável, planejamento urbano e tecnologias de construção.",
-      highlights: ["Projeto de TCC premiado", "Participação em concursos de arquitetura", "Estágio em escritório renomado"]
+      description: "Bacharelado cursado durante atuação em indústria química, com ênfase em processos de desenvolvimento de produtos.",
+      highlights: ["Ênfase em Engenheria Industrial", "7+ anos de experiência em multinacional química"]
     },
     {
       degree: "CST em Análise e Desenvolvimento de Sistemas",
       institution: "Universidade Cruzeiro do Sul",
       period: "2019 - 2021",
       location: "Gravataí, RS",
-      description: "Formação técnica em programação, redes e sistemas de informação.",
-      highlights: ["Desenvolvimento de projetos práticos", "Participação em feiras de tecnologia", "Estágio em empresa de TI"]
+      description: "Formação técnica superior em tecnologia da informação.",
+      highlights: ["Desenvolvimento de projetos práticos", "Participação em feiras de tecnologia", "Cargo de desenvolvedor júnior durante curso"]
     },
     {
       degree: "MIT em Arquitetura de Software",
       institution: "Instituto Infnet",
       period: "2024 - 2025",
       location: "Remoto Ao Vivo",
-      description: "Especialização em desenvolvimento web moderno com React, Node.js e TypeScript.",
+      description: "Especialização Lato Sensu.",
       highlights: ["Projetos práticos completos", "Mentoria com profissionais", "Certificação em tecnologias modernas"]
     },
     {
       degree: "MBA em Gestão de Projetos e Metodologias Ágeis",
       institution: "PUC RS",
       period: "2025",
-      location: "Online",
-      description: "Especialização em design de interfaces e experiência do usuário.",
-      highlights: ["Design thinking", "Prototipagem avançada", "Pesquisa com usuários"]
+      location: "Porto Alegre, RS",
+      description: "Especialização Lato Sensu.",
+      highlights: ["Design thinking", "Mentalidade Ágil - Lean", "IA Aplicada a Gestão de Projetos"]
     }
   ];
 
@@ -125,7 +125,7 @@ const EducationSection = () => {
           <div className="inline-flex items-center space-x-2 text-text-light/70">
             <span>{t('education.certificationsCTA')}</span>
             <a
-              href="#contact"
+              href="https://wa.me/5551981062110"
               className="text-accent hover:text-accent/80 transition-colors duration-300 font-medium"
             >
               {t('education.contactCTA')}

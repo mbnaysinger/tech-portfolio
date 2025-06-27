@@ -11,17 +11,17 @@ const SocialLinks = ({ className = "", iconSize = 24 }: SocialLinksProps) => {
     {
       icon: <Linkedin size={iconSize} />,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/seu-perfil",
+      href: "https://www.linkedin.com/in/maike-naysinger-borges-9a0525144/",
     },
     {
       icon: <GithubIcon size={iconSize} />,
       label: "GitHub",
-      href: "https://github.com/seu-usuario",
+      href: "https://github.com/mbnaysinger",
     },
     {
       icon: <Twitter size={iconSize} />,
       label: "Twitter",
-      href: "https://twitter.com/seu-usuario",
+      href: "https://x.com/mbnaysinger",
     },
   ];
 

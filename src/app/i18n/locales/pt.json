@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "greeting": "Olá, me chamo",
+    "name": "Maike",
+    "title": "Arquiteto e Desenvolvedor Full-Stack.",
+    "downloadCV": "Baixar CV"
+  },
+  "about": {
+    "title": "Sobre",
+    "highlight": "Mim",
+    "description": "Sou um desenvolvedor full-stack apaixonado por criar soluções digitais inovadoras e experiências de usuário excepcionais. Com experiência em tecnologias modernas, busco sempre aprender e evoluir.",
+    "paragraph1": "Trabalho com React, Node.js, TypeScript e outras tecnologias para construir aplicações web escaláveis e performáticas. Acredito que código limpo e bem estruturado é fundamental para o sucesso de qualquer projeto.",
+    "paragraph2": "Quando não estou codificando, gosto de contribuir para a comunidade open-source, participar de hackathons e compartilhar conhecimento através de artigos e palestras.",
+    "stats": {
+      "experience": "Anos de Experiência",
+      "projects": "Projetos Concluídos",
+      "technologies": "Tecnologias Dominadas",
+      "satisfaction": "Satisfação do Cliente"
+    },
+    "personalInfo": {
+      "title": "Informações Pessoais",
+      "name": "Nome:",
+      "email": "Email:",
+      "location": "Localização:",
+      "availability": "Disponibilidade:"
+    }
+  },
+  "education": {
+    "title": "Minhas",
+    "highlight": "Formações",
+    "subtitle": "Minha jornada acadêmica e profissional, combinando gestão ágil e tecnologia para criar soluções inovadoras.",
+    "highlights": "Destaques:",
+    "certificationsCTA": "Interessado em ver minhas certificações?",
+    "contactCTA": "Entre em contato"
+  },
+  "skills": {
+    "title": "Minhas",
+    "highlight": "Habilidades",
+    "subtitle": "Tecnologias e ferramentas com as quais trabalho para criar soluções inovadoras.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Banco de Dados",
+    "tools": "Ferramentas & Outros"
+  },
+  "experience": {
+    "title": "Minha",
+    "highlight": "Experiência",
+    "subtitle": "Minha jornada profissional e as empresas com as quais trabalhei.",
+    "present": "Atual"
+  },
+  "projects": {
+    "title": "Meus",
+    "highlight": "Projetos",
+    "subtitle": "Alguns dos projetos que desenvolvi, demonstrando habilidades técnicas e criatividade na solução de problemas.",
+    "demo": "Demo",
+    "code": "Código",
+    "featured": "Destaque",
+    "moreProjects": "Ver Mais Projetos"
+  },
+  "contact": {
+    "title": "Entre em",
+    "highlight": "Contato",
+    "subtitle": "Vamos trabalhar juntos! Entre em contato comigo.",
+    "name": "Nome",
+    "email": "Email",
+    "message": "Mensagem",
+    "send": "Enviar Mensagem",
+    "sending": "Enviando...",
+    "success": "Mensagem enviada com sucesso!",
+    "error": "Erro ao enviar mensagem. Tente novamente."
+  },
+  "navigation": {
+    "about": "Sobre",
+    "skills": "Habilidades",
+    "experience": "Experiência",
+    "projects": "Projetos",
+    "contact": "Contato"
+  }
+} 

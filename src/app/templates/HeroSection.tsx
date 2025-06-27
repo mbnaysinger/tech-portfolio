@@ -1,10 +1,16 @@
 "use client";
 
 import React from "react";
+import Image from "next/image";
 import Button from "../atoms/Button";
+import LanguageSelector from "../atoms/LanguageSelector";
+import SocialLinks from "../atoms/SocialLinks";
 import { ChevronDown } from "lucide-react";
+import { useI18n } from "../i18n/context";
 
 const HeroSection = () => {
+  const { t } = useI18n();
+  
   const scrollToNextSection = () => {
     const aboutSection = document.querySelector('[aria-label="Seção sobre mim"]');
     if (aboutSection) {
@@ -17,7 +23,16 @@ const HeroSection = () => {
       className="relative min-h-screen w-full flex items-center justify-center bg-bg text-text-light overflow-hidden"
       aria-label="Seção de introdução do portfólio"
     >
-      {/* Vídeo de fundo */}
+      {/* Seletor de idioma */}
+      <div className="absolute top-6 right-6 z-50">
+        <LanguageSelector />
+      </div>
+      
+      {/* Ícones de redes sociais */}
+      <div className="absolute top-6 left-6 z-50">
+        <SocialLinks iconSize={20} />
+      </div>
+      {/* Vídeo de fundo
       <video
         className="absolute inset-0 w-full h-full object-cover z-0"
         src="/hero-bg.mp4"
@@ -27,16 +42,30 @@ const HeroSection = () => {
         playsInline
         poster="/hero-poster.webp"
         aria-hidden="true"
-      />
+      /> */}
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-overlay z-10" />
       {/* Conteúdo */}
       <div className="relative z-20 w-full px-4 sm:px-8 flex flex-col items-center justify-center text-center"
         style={{ gridColumn: '1 / -1' }}
       >
-        <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl text-text-light mb-6" style={{ fontFamily: 'var(--font-inter), var(--font-geist-sans), system-ui, sans-serif' }}>
-          Olá, me chamo <span className="text-accent">Maike</span>, Arquiteto e Desenvolvedor Full-Stack.
+        {/* Foto circular */}
+        <div className="w-32 h-32 md:w-40 md:h-40 rounded-full border-4 mb-16 flex items-center justify-center bg-white/10 backdrop-blur-sm overflow-hidden"
+             style={{ borderColor: '#39a190' }}>
+          <Image
+            src="/perfil.jpeg"
+            alt="Foto de perfil de Maike"
+            width={160}
+            height={160}
+            className="w-full h-full object-cover"
+            priority
+          />
+        </div>
+        
+        <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl text-text-light mb-14" style={{ fontFamily: 'var(--font-inter), var(--font-geist-sans), system-ui, sans-serif' }}>
+          {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>, {t('hero.title')}
         </h1>
+
         <Button
           href="/cv.pdf"
           download
@@ -44,7 +73,7 @@ const HeroSection = () => {
           size="lg"
           aria-label="Baixar currículo em PDF"
         >
-          Baixar CV
+          {t('hero.downloadCV')}
         </Button>
       </div>
 

@@ -1,0 +1,79 @@
+{
+  "hero": {
+    "greeting": "Hello, I'm",
+    "name": "Maike",
+    "title": "Architect and Full-Stack Developer.",
+    "downloadCV": "Download CV"
+  },
+  "about": {
+    "title": "About",
+    "highlight": "Me",
+    "description": "I'm a full-stack developer passionate about creating innovative digital solutions and exceptional user experiences. With experience in modern technologies, I always seek to learn and evolve.",
+    "paragraph1": "I work with React, Node.js, TypeScript and other technologies to build scalable and performant web applications. I believe that clean and well-structured code is fundamental to the success of any project.",
+    "paragraph2": "When I'm not coding, I like to contribute to the open-source community, participate in hackathons and share knowledge through articles and talks.",
+    "stats": {
+      "experience": "Years of Experience",
+      "projects": "Completed Projects",
+      "technologies": "Mastered Technologies",
+      "satisfaction": "Client Satisfaction"
+    },
+    "personalInfo": {
+      "title": "Personal Information",
+      "name": "Name:",
+      "email": "Email:",
+      "location": "Location:",
+      "availability": "Availability:"
+    }
+  },
+  "education": {
+    "title": "My",
+    "highlight": "Education",
+    "subtitle": "My academic and professional journey, combining architecture and technology to create innovative solutions.",
+    "highlights": "Highlights:",
+    "certificationsCTA": "Interested in seeing my certifications?",
+    "contactCTA": "Get in touch"
+  },
+  "skills": {
+    "title": "My",
+    "highlight": "Skills",
+    "subtitle": "Technologies and tools I work with to create innovative solutions.",
+    "frontend": "Frontend",
+    "backend": "Backend",
+    "database": "Database",
+    "tools": "Tools & Others"
+  },
+  "experience": {
+    "title": "My",
+    "highlight": "Experience",
+    "subtitle": "My professional journey and the companies I've worked with.",
+    "present": "Present"
+  },
+  "projects": {
+    "title": "My",
+    "highlight": "Projects",
+    "subtitle": "Some of the projects I've developed, demonstrating technical skills and creativity in problem solving.",
+    "demo": "Demo",
+    "code": "Code",
+    "featured": "Featured",
+    "moreProjects": "View More Projects"
+  },
+  "contact": {
+    "title": "Get in",
+    "highlight": "Touch",
+    "subtitle": "Let's work together! Get in touch with me.",
+    "name": "Name",
+    "email": "Email",
+    "message": "Message",
+    "send": "Send Message",
+    "sending": "Sending...",
+    "success": "Message sent successfully!",
+    "error": "Error sending message. Try again."
+  },
+  "navigation": {
+    "about": "About",
+    "skills": "Skills",
+    "experience": "Experience",
+    "projects": "Projects",
+    "contact": "Contact"
+  }
+} 

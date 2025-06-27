@@ -104,7 +104,7 @@ const SkillsSection = () => {
             Minhas <span className="text-accent">Habilidades</span>
           </Heading>
           <p className="text-text-light/80 mt-4 max-w-2xl mx-auto">
-            Tecnologias e ferramentas que utilizo para criar soluções digitais 
+            O que utilizo para criar soluções digitais 
             inovadoras e de alta qualidade.
           </p>
         </div>

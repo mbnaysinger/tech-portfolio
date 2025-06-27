@@ -3,8 +3,7 @@
 import React, { useState } from "react";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
-import SocialLinks from "../atoms/SocialLinks";
-import { Mail, Phone, MapPin, Send } from "lucide-react";
+import { Send } from "lucide-react";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -29,26 +28,26 @@ const ContactSection = () => {
     });
   };
 
-  const contactInfo = [
-    {
-      icon: <Mail size={24} />,
-      label: "Email",
-      value: "seu@email.com",
-      href: "mailto:seu@email.com",
-    },
-    {
-      icon: <Phone size={24} />,
-      label: "Telefone",
-      value: "+55 (11) 99999-9999",
-      href: "tel:+5511999999999",
-    },
-    {
-      icon: <MapPin size={24} />,
-      label: "Localização",
-      value: "São Paulo, SP - Brasil",
-      href: "#",
-    },
-  ];
+  // const contactInfo = [
+  //   {
+  //     icon: <Mail size={24} />,
+  //     label: "Email",
+  //     value: "seu@email.com",
+  //     href: "mailto:seu@email.com",
+  //   },
+  //   {
+  //     icon: <Phone size={24} />,
+  //     label: "Telefone",
+  //     value: "+55 (11) 99999-9999",
+  //     href: "tel:+5511999999999",
+  //   },
+  //   {
+  //     icon: <MapPin size={24} />,
+  //     label: "Localização",
+  //     value: "São Paulo, SP - Brasil",
+  //     href: "#",
+  //   },
+  // ];
 
   return (
     <section

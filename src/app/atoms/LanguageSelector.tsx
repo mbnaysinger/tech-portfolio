@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import { useI18n } from '../i18n/context';
-import { Globe, ChevronDown } from 'lucide-react';
+import { ChevronDown } from 'lucide-react';
 
 const LanguageSelector = () => {
   const { locale, changeLocale } = useI18n();

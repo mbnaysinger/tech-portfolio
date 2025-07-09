@@ -10,20 +10,12 @@ const EducationSection = () => {
 
   const education = [
     {
-      degree: "Bacharelado em Engenharia Química",
-      institution: "Universidade Luterana do Brasil",
-      period: "2013 - 2019",
-      location: "Canoas, RS",
-      description: "Bacharelado cursado durante atuação em indústria química, com ênfase em processos de desenvolvimento de produtos.",
-      highlights: ["Ênfase em Engenheria Industrial", "7+ anos de experiência em multinacional química"]
-    },
-    {
-      degree: "CST em Análise e Desenvolvimento de Sistemas",
-      institution: "Universidade Cruzeiro do Sul",
-      period: "2019 - 2021",
-      location: "Gravataí, RS",
-      description: "Formação técnica superior em tecnologia da informação.",
-      highlights: ["Desenvolvimento de projetos práticos", "Participação em feiras de tecnologia", "Cargo de desenvolvedor júnior durante curso"]
+      degree: "MBA em Gestão de Projetos e Metodologias Ágeis",
+      institution: "PUC RS",
+      period: "2025",
+      location: "Porto Alegre, RS",
+      description: "Especialização Lato Sensu.",
+      highlights: ["Design thinking", "Mentalidade Ágil - Lean", "IA Aplicada a Gestão de Projetos"]
     },
     {
       degree: "MIT em Arquitetura de Software",
@@ -34,12 +26,20 @@ const EducationSection = () => {
       highlights: ["Projetos práticos completos", "Mentoria com profissionais", "Certificação em tecnologias modernas"]
     },
     {
-      degree: "MBA em Gestão de Projetos e Metodologias Ágeis",
-      institution: "PUC RS",
-      period: "2025",
-      location: "Porto Alegre, RS",
-      description: "Especialização Lato Sensu.",
-      highlights: ["Design thinking", "Mentalidade Ágil - Lean", "IA Aplicada a Gestão de Projetos"]
+      degree: "CST em Análise e Desenvolvimento de Sistemas",
+      institution: "Universidade Cruzeiro do Sul",
+      period: "2019 - 2021",
+      location: "Gravataí, RS",
+      description: "Formação técnica superior em tecnologia da informação.",
+      highlights: ["Desenvolvimento de projetos práticos", "Participação em feiras de tecnologia", "Cargo de desenvolvedor júnior durante curso"]
+    },
+    {
+      degree: "Bacharelado em Engenharia Química",
+      institution: "Universidade Luterana do Brasil",
+      period: "2013 - 2019",
+      location: "Canoas, RS",
+      description: "Bacharelado cursado durante atuação em indústria química, com ênfase em processos de desenvolvimento de produtos.",
+      highlights: ["Ênfase em Engenheria Industrial", "7+ anos de experiência em multinacional química"]
     }
   ];
 

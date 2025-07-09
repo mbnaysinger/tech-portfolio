@@ -3,36 +3,53 @@
 import React from "react";
 import Heading from "../atoms/Heading";
 import TimelineItem from "../molecules/TimelineItem";
+import { useI18n } from "../i18n/context";
 
 const ExperienceSection = () => {
+  const { t } = useI18n();
+  
   const experiences = [
     {
+      year: "2025",
+      title: "Arquiteto de Soluções",
+      company: "FIERGS",
+      description: "Liderança técnica em projetos de grande escala, arquitetura de soluções, mentoria de desenvolvedores juniores e implementação de boas práticas de desenvolvimento com ferramentas de IA.",
+      technologies: ["IA Solutions", "Java", "Spring", "TypeScript", "NestJS", "PHP Laravel", "Next.js", "MySQL", "MongoDB", "Oracle", "Azure", "Docker", "Kubernetes", "Jenkins", "Scrum Master", "C4 Model", "Togaf", "Product Owner"],
+    },
+    {
       year: "2023",
-      title: "Senior Full-Stack Developer",
-      company: "Tech Solutions Inc.",
-      description: "Liderança técnica em projetos de grande escala, arquitetura de sistemas, mentoria de desenvolvedores juniores e implementação de boas práticas de desenvolvimento.",
-      technologies: ["React", "Node.js", "TypeScript", "AWS", "Docker"],
+      title: "Analista de TI Sênior",
+      company: "FIERGS",
+      description: "Desenvolvimento de aplicações web, integração com APIs, otimização de performance e implementação de testes automatizados. Mentoria de desenvolvedores juniores e implementação de boas práticas de desenvolvimento com ferramentas de IA.",
+      technologies: ["IA Solutions", "Java", "Spring", "PHP Laravel", "MySQL", "MongoDB", "Oracle", "Azure", "Docker", "Jenkins", "Scrum Master", "Product Owner"],
     },
     {
       year: "2022",
-      title: "Full-Stack Developer",
-      company: "Digital Innovations",
-      description: "Desenvolvimento de aplicações web e mobile, integração com APIs, otimização de performance e implementação de testes automatizados.",
-      technologies: ["React", "React Native", "Express", "MongoDB", "Jest"],
+      title: "Analista de TI Pleno",
+      company: "FIERGS",
+      description: "Desenvolvimento de APIs Restful, integração com APIs de terceiros, otimização de performance e implementação de testes automatizados.",
+      technologies: ["Java", "Spring", "Oracle", "Angular", "Webflux", "WebMVC", "Comunicação", "Análise de Requisitos"],
     },
     {
       year: "2021",
-      title: "Frontend Developer",
-      company: "Web Studio",
-      description: "Criação de interfaces responsivas, implementação de designs, otimização de UX/UI e colaboração com equipes de design e backend.",
-      technologies: ["React", "Vue.js", "Sass", "Webpack", "Figma"],
+      title: "Analista de TI Júnior",
+      company: "FIERGS",
+      description: "Sustentação e desenvolvimento de melhoras em portal legado de serviços de comércio exterior da organização. Foco em manter operacionalidade nas emissões de Certificado de Origem.",
+      technologies: ["Java 6, 7 e 8", "Hibernate", "Primefaces", "Oracle", "Velocity Template", "SVN", "WebLogic"],
     },
     {
       year: "2020",
-      title: "Junior Developer",
-      company: "StartupXYZ",
-      description: "Desenvolvimento de features, manutenção de código, debugging e aprendizado de tecnologias modernas de desenvolvimento web.",
-      technologies: ["JavaScript", "HTML", "CSS", "Git", "Agile"],
+      title: "Analista de TI Autônomo",
+      company: "2M2B",
+      description: "Desenvolvimento de aplicações web utilizando PHP Laravel com Vue.js e/ou Express.js com Angular.",
+      technologies: ["PHP Laravel", "Vue.js", "Express.js", "MySQL", "HTML", "CSS", "JavaScript", "Git"],
+    },
+    {
+      year: "2013",
+      title: "Técnico em Química Sênior",
+      company: "PPG Industries",
+      description: "7 anos de experiência em desenvolvimento de tintas arquitetônicas base água e solvente, com foco em redução de custo, melhoria de qualidade e redução de impacto ambiental.",
+      technologies: ["Química", "Formulação", "Engenharia de Procesoss", "Tintas Arquitetônicas", "Base Água", "Base Solvente"],
     },
   ];
 
@@ -45,10 +62,10 @@ const ExperienceSection = () => {
         {/* Título */}
         <div className="text-center mb-16">
           <Heading level={2} aria-label="Título da seção de experiências">
-            Minha <span className="text-accent">Experiência</span>
+            {t('experience.title')} <span className="text-accent">{t('experience.highlight')}</span>
           </Heading>
           <p className="text-text-light/80 mt-4 max-w-2xl mx-auto">
-            Jornada profissional e conquistas ao longo dos anos de desenvolvimento.
+            {t('experience.subtitle')}
           </p>
         </div>
 

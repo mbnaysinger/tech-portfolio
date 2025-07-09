@@ -1,5 +1,5 @@
 import React from "react";
-import { Linkedin, GithubIcon, Twitter } from "lucide-react";
+import { Linkedin, GithubIcon, Twitter, MessageCircleMore } from "lucide-react";
 
 interface SocialLinksProps {
   className?: string;
@@ -22,6 +22,11 @@ const SocialLinks = ({ className = "", iconSize = 24 }: SocialLinksProps) => {
       icon: <Twitter size={iconSize} />,
       label: "Twitter",
       href: "https://x.com/mbnaysinger",
+    },
+    {
+      icon: <MessageCircleMore size={iconSize} />,
+      label: "Whatsapp",
+      href: "https://wa.me/5551981062110",
     },
   ];
 

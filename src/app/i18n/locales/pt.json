@@ -3,16 +3,18 @@
     "greeting": "Olá, me chamo",
     "name": "Maike",
     "title": "Arquiteto de Soluções e Desenvolvedor Full-Stack",
-    "downloadCV": "Baixar CV"
+    "downloadCV": "Baixar CV",
+    "actionDown": "Ver mais"
   },
   "about": {
     "title": "Sobre",
     "highlight": "Mim",
-    "description": "Gremista e fã de esportes a motor, no meio tech sou apaixonado por construir soluções digitais robustas, escaláveis e de alto impacto. Minha trajetória é marcada pela versatilidade e pela capacidade de transitar por todo o ciclo de vida do desenvolvimento de software, da concepção arquitetural à entrega contínua e otimização em produção.",
-    "paragraph1": "<strong>Desenvolvimento Backend & Frontend:</strong> Proficiência em ecossistemas modernos como <strong>Java</strong> (com Spring Boot, Quarkus, WebMVC, WebFlux para arquiteturas de microserviços e reativas), <strong>Node.js</strong> (NestJS, Fastify para alta performance) e <strong>PHP</strong> (Laravel para soluções web completas). No frontend, desenvolvo interfaces ricas e dinâmicas com <strong>React</strong> e <strong>Next.js</strong>.",
-    "paragraph2": "<strong>Dados e Persistência:</strong> Experiência sólida com bancos de dados relacionais (MySQL, PostgreSQL, Oracle), NoSQL (MongoDB, CosmosDB) e soluções de caching (Redis), garantindo performance e integridade dos dados.",
-    "paragraph3": "<strong>Cloud & DevOps Engineering:</strong> Conhecimento em infraestrutura e automação na <strong>Azure</strong>, com atuação em CI/CD (Jenkins), orquestração e gerenciamento de contêineres (Docker, Kubernetes, Rancher) e monitoramento (Grafana). Domino também o gerenciamento de código (Bitbucket, GitHub) e soluções de identidade e acesso (Keycloak).",
-    "paragraph4": "Além do código, atuo como <strong>líder e estrategista</strong>, impulsionando equipes através de metodologias ágeis como Scrum e Kanban. Minha experiência como Gestor de Projetos de TI e Product Owner me permite não apenas arquitetar e desenvolver sistemas, mas também traduzir requisitos de negócio complexos em entregas de valor tangíveis, focando na inovação e na otimização de processos.",
+    "description": "<strong> Inspirado a construir soluções digitais robustas, escaláveis e de alto impacto.</strong> Minha trajetória é marcada pela versatilidade e pela capacidade de transitar por todo o ciclo de vida do desenvolvimento de software, da concepção arquitetural à entrega contínua e otimização em produção.<br><br>",
+    "paragraph1": "<strong>Como arquiteto de soluções hands-on</strong>, vou além do desenho e proposição de arquiteturas: atuo diretamente junto aos times de desenvolvimento, participando ativamente da implementação, identificando gargalos em tempo real e promovendo melhorias contínuas nos processos e tecnologias. Acredito que a verdadeira arquitetura nasce da colaboração próxima com quem executa, garantindo que as soluções propostas sejam não apenas tecnicamente sólidas, mas também práticas e eficientes no dia a dia das equipes.",
+    "paragraph2": "<strong>Desenvolvimento Backend & Frontend:</strong> Proficiência em ecossistemas modernos como <strong>Java</strong> (com Spring Boot, Quarkus, WebMVC, WebFlux para arquiteturas de microserviços e reativas), <strong>Node.js</strong> (NestJS, Fastify para alta performance) e <strong>PHP</strong> (Laravel para soluções web completas). No frontend, desenvolvo interfaces ricas e dinâmicas com <strong>Next.js</strong>.",
+    "paragraph3": "<strong>Dados e Persistência:</strong> Experiência sólida com bancos de dados relacionais (MySQL, PostgreSQL, Oracle), NoSQL (MongoDB, CosmosDB) e soluções de caching (Redis), garantindo performance e integridade dos dados.",
+    "paragraph4": "<strong>Cloud & DevOps Engineering:</strong> Conhecimento em infraestrutura e automação na <strong>Azure</strong>, com atuação em CI/CD (Jenkins), orquestração e gerenciamento de contêineres (Docker, Kubernetes, Rancher) e monitoramento (Grafana). Domino também o gerenciamento de código (Bitbucket, GitHub) e soluções de identidade e acesso (Keycloak).",
+    "paragraph5": "Além do código, atuo como <strong>líder e estrategista</strong>, impulsionando equipes através de metodologias ágeis como Scrum e Kanban. Minha experiência como Gestor de Projetos de TI e Product Owner me permite não apenas arquitetar e desenvolver sistemas, mas também traduzir requisitos de negócio complexos em entregas de valor tangíveis, focando na inovação e na otimização de processos.",
     "stats": {
       "experience": "Anos de Experiência",
       "projects": "Projetos Concluídos",
@@ -38,7 +40,7 @@
   "skills": {
     "title": "Minhas",
     "highlight": "Habilidades",
-    "subtitle": "Tecnologias e ferramentas com as quais trabalho para criar soluções inovadoras.",
+    "subtitle": "O que utilizo para criar soluções digitais inovadoras e de alta qualidade.",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Banco de Dados",
@@ -62,14 +64,19 @@
   "contact": {
     "title": "Entre em",
     "highlight": "Contato",
-    "subtitle": "Vamos trabalhar juntos! Entre em contato comigo.",
+    "subtitle": "Entre em contato para discutir projetos, oportunidades ou apenas para bater um papo sobre tecnologia.",
+    "subtitle2": "Envie uma mensagem",
     "name": "Nome",
     "email": "Email",
     "message": "Mensagem",
     "send": "Enviar Mensagem",
     "sending": "Enviando...",
     "success": "Mensagem enviada com sucesso!",
-    "error": "Erro ao enviar mensagem. Tente novamente."
+    "error": "Erro ao enviar mensagem. Tente novamente.",
+    "namePlaceholder": "Seu nome completo",
+    "emailPlaceholder": "seu@email.com",
+    "subjectPlaceholder": "Assunto da mensagem",
+    "messagePlaceholder": "Digite sua mensagem aqui..."
   },
   "navigation": {
     "about": "Sobre",

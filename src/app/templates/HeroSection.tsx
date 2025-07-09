@@ -32,17 +32,6 @@ const HeroSection = () => {
       <div className="absolute top-6 left-6 z-50">
         <SocialLinks iconSize={20} />
       </div>
-      {/* Vídeo de fundo
-      <video
-        className="absolute inset-0 w-full h-full object-cover z-0"
-        src="/hero-bg.mp4"
-        autoPlay
-        loop
-        muted
-        playsInline
-        poster="/hero-poster.webp"
-        aria-hidden="true"
-      /> */}
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-overlay z-10" />
       {/* Conteúdo */}
@@ -84,7 +73,7 @@ const HeroSection = () => {
           className="group flex flex-col items-center space-y-2 text-accent hover:text-accent/80 transition-colors duration-300"
           aria-label="Rolar para a próxima seção"
         >
-          <span className="text-sm font-medium opacity-80">Ver mais</span>
+          <span className="text-sm font-medium opacity-80">{t('hero.actionDown')}</span>
           <div className="relative">
             <ChevronDown 
               size={24} 

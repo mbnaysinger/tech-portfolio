@@ -3,6 +3,7 @@
 import React from "react";
 import Heading from "../atoms/Heading";
 import SkillCard from "../molecules/SkillCard";
+import { useI18n } from "../i18n/context";
 import { 
   Code2, 
   Database, 
@@ -14,6 +15,8 @@ import {
 } from "lucide-react";
 
 const SkillsSection = () => {
+  const { t } = useI18n();
+  
   const skills = [
     {
       name: "Comunicação",
@@ -104,11 +107,10 @@ const SkillsSection = () => {
         {/* Título */}
         <div className="text-center mb-16">
           <Heading level={2} aria-label="Título da seção de habilidades">
-            Minhas <span className="text-accent">Habilidades</span>
+            {t('skills.title')} <span className="text-accent">{t('skills.highlight')}</span>
           </Heading>
           <p className="text-text-light/80 mt-4 max-w-2xl mx-auto">
-            O que utilizo para criar soluções digitais 
-            inovadoras e de alta qualidade.
+            {t('skills.subtitle')}
           </p>
         </div>
 

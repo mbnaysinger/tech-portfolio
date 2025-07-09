@@ -21,9 +21,7 @@ const AboutSection = () => {
           </Heading>
           
           <div className="space-y-4 text-text-light/80 leading-relaxed text-justify">
-            <p>
-              {t('about.description')}
-            </p>
+            <SafeHtml html={t('about.description')} />
             
             <p>
               <SafeHtml html={t('about.paragraph1')} />
@@ -39,6 +37,10 @@ const AboutSection = () => {
 
             <p>
               <SafeHtml html={t('about.paragraph4')} />
+            </p>
+
+            <p>
+              <SafeHtml html={t('about.paragraph5')} />
             </p>
           </div>
         </div>

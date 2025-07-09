@@ -4,8 +4,11 @@ import React, { useState } from "react";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
 import { Send } from "lucide-react";
+import { useI18n } from "../i18n/context";
 
 const ContactSection = () => {
+  const { t } = useI18n();
+  
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -58,11 +61,10 @@ const ContactSection = () => {
         {/* Título */}
         <div className="text-center mb-16">
           <Heading level={2} aria-label="Título da seção de contato">
-            Entre em <span className="text-accent">Contato</span>
+            {t('contact.title')} <span className="text-accent">{t('contact.highlight')}</span>
           </Heading>
           <p className="text-text-light/80 mt-4 max-w-2xl mx-auto">
-            Entre em contato para discutir projetos, 
-            oportunidades ou apenas para bater um papo sobre tecnologia.
+            {t('contact.subtitle')}
           </p>
         </div>
 
@@ -107,14 +109,14 @@ const ContactSection = () => {
           {/* Formulário de contato */}
           <div className="space-y-6">
             <h3 className="text-2xl font-bold text-text-light">
-              Envie uma Mensagem
+              {t('contact.subtitle2')}
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-text-light mb-2">
-                    Nome *
+                    {t('contact.name')} *
                   </label>
                   <input
                     type="text"
@@ -124,14 +126,14 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-glass border border-white/10 text-text-light placeholder-text-light/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all duration-300"
-                    placeholder="Seu nome completo"
+                    placeholder={t('contact.namePlaceholder')}
                     aria-describedby="name-error"
                   />
                 </div>
                 
                 <div>
                   <label htmlFor="email" className="block text-sm font-medium text-text-light mb-2">
-                    Email *
+                    {t('contact.email')} *
                   </label>
                   <input
                     type="email"
@@ -141,7 +143,7 @@ const ContactSection = () => {
                     onChange={handleChange}
                     required
                     className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-glass border border-white/10 text-text-light placeholder-text-light/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all duration-300"
-                    placeholder="seu@email.com"
+                    placeholder={t('contact.emailPlaceholder')}
                     aria-describedby="email-error"
                   />
                 </div>
@@ -149,7 +151,7 @@ const ContactSection = () => {
               
               <div>
                 <label htmlFor="subject" className="block text-sm font-medium text-text-light mb-2">
-                  Assunto *
+                  {t('contact.subject')} *
                 </label>
                 <input
                   type="text"
@@ -159,14 +161,14 @@ const ContactSection = () => {
                   onChange={handleChange}
                   required
                   className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-glass border border-white/10 text-text-light placeholder-text-light/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all duration-300"
-                  placeholder="Assunto da mensagem"
+                  placeholder={t('contact.subjectPlaceholder')}
                   aria-describedby="subject-error"
                 />
               </div>
               
               <div>
                 <label htmlFor="message" className="block text-sm font-medium text-text-light mb-2">
-                  Mensagem *
+                  {t('contact.message')} *
                 </label>
                 <textarea
                   id="message"
@@ -176,7 +178,7 @@ const ContactSection = () => {
                   required
                   rows={6}
                   className="w-full px-4 py-3 rounded-lg bg-white/5 backdrop-blur-glass border border-white/10 text-text-light placeholder-text-light/50 focus:outline-none focus:border-accent/50 focus:ring-2 focus:ring-accent/20 transition-all duration-300 resize-none"
-                  placeholder="Digite sua mensagem aqui..."
+                  placeholder={t('contact.messagePlaceholder')}
                   aria-describedby="message-error"
                 />
               </div>
@@ -189,7 +191,7 @@ const ContactSection = () => {
                 className="w-full"
               >
                 <Send size={20} className="mr-2" />
-                Enviar Mensagem
+                {t('contact.send')}
               </Button>
             </form>
           </div>

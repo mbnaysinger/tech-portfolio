@@ -3,21 +3,23 @@
     "greeting": "Hello, I'm",
     "name": "Maike",
     "title": "Architect and Full-Stack Developer.",
-    "downloadCV": "Download CV"
+    "downloadCV": "Download CV",
+    "actionDown": "See more"
   },
   "about": {
     "title": "About",
     "highlight": "Me",
-    "description": "I'm a full-stack developer passionate about creating innovative digital solutions and exceptional user experiences. With experience in modern technologies, I always seek to learn and evolve.",
-    "paragraph1": "<strong>Backend & Frontend Development:</strong> I work with React, Node.js, TypeScript and other technologies to build scalable and performant web applications. I believe that clean and well-structured code is fundamental to the success of any project.",
-    "paragraph2": "<strong>Data & Persistence:</strong> Experience with relational databases, NoSQL solutions and caching systems, ensuring data performance and integrity.",
-    "paragraph3": "<strong>Cloud & DevOps Engineering:</strong> Specialist in infrastructure and automation, with strong experience in CI/CD, container orchestration and monitoring solutions.",
-    "paragraph4": "When I'm not coding, I like to contribute to the open-source community, participate in hackathons and share knowledge through articles and talks.",
+    "description": "<strong>Inspired to build robust, scalable, and high-impact digital solutions.</strong> My journey is marked by versatility and the ability to navigate through the entire software development lifecycle, from architectural conception to continuous delivery and production optimization.<br><br>",
+    "paragraph1": "<strong>As a hands-on solution architect</strong>, I go beyond designing and proposing architectures: I work directly with development teams, actively participating in implementation, identifying bottlenecks in real-time, and promoting continuous improvements in processes and technologies. I believe that true architecture emerges from close collaboration with those who execute, ensuring that proposed solutions are not only technically solid but also practical and efficient in teams' daily operations.",
+    "paragraph2": "<strong>Backend & Frontend Development:</strong> Proficiency in modern ecosystems such as <strong>Java</strong> (with Spring Boot, Quarkus, WebMVC, WebFlux for microservices and reactive architectures), <strong>Node.js</strong> (NestJS, Fastify for high performance), and <strong>PHP</strong> (Laravel for complete web solutions). On the frontend, I develop rich and dynamic interfaces with <strong>Next.js</strong>.",
+    "paragraph3": "<strong>Data and Persistence:</strong> Solid experience with relational databases (MySQL, PostgreSQL, Oracle), NoSQL (MongoDB, CosmosDB), and caching solutions (Redis), ensuring data performance and integrity.",
+    "paragraph4": "<strong>Cloud & DevOps Engineering:</strong> Knowledge in infrastructure and automation on <strong>Azure</strong>, with experience in CI/CD (Jenkins), container orchestration and management (Docker, Kubernetes, Rancher), and monitoring (Grafana). I also master code management (Bitbucket, GitHub) and identity and access solutions (Keycloak).",
+    "paragraph5": "Beyond code, I act as a <strong>leader and strategist</strong>, driving teams through agile methodologies such as Scrum and Kanban. My experience as an IT Project Manager and Product Owner allows me not only to architect and develop systems but also to translate complex business requirements into tangible value deliveries, focusing on innovation and process optimization.",
     "stats": {
       "experience": "Years of Experience",
       "projects": "Completed Projects",
       "technologies": "Mastered Technologies",
-      "satisfaction": "Client Satisfaction"
+      "satisfaction": "Focused on AI solutions"
     },
     "personalInfo": {
       "title": "Personal Information",
@@ -38,7 +40,7 @@
   "skills": {
     "title": "My",
     "highlight": "Skills",
-    "subtitle": "Technologies and tools I work with to create innovative solutions.",
+    "subtitle": "What I use to create innovative, high-quality digital solutions.",
     "frontend": "Frontend",
     "backend": "Backend",
     "database": "Database",
@@ -62,14 +64,19 @@
   "contact": {
     "title": "Get in",
     "highlight": "Touch",
-    "subtitle": "Let's work together! Get in touch with me.",
+    "subtitle": "Get in touch to discuss projects, opportunities or just to chat about technology.",
+    "subtitle2": "Send me a message",
     "name": "Name",
     "email": "Email",
     "message": "Message",
     "send": "Send Message",
     "sending": "Sending...",
     "success": "Message sent successfully!",
-    "error": "Error sending message. Try again."
+    "error": "Error sending message. Try again.",
+    "namePlaceholder": "Your full name",
+    "emailPlaceholder": "your@email.com",
+    "subjectPlaceholder": "Message subject",
+    "messagePlaceholder": "Enter your message here..."
   },
   "navigation": {
     "about": "About",

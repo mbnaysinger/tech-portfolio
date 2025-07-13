@@ -55,15 +55,27 @@ const HeroSection = () => {
           {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>, {t('hero.title')}
         </h1>
 
-        <Button
-          href="/cv.pdf"
-          download
-          variant="primary"
-          size="lg"
-          aria-label="Baixar currículo em PDF"
-        >
-          {t('hero.downloadCV')}
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 items-center">
+          <Button
+            href="/cv.pdf"
+            download
+            variant="primary"
+            size="lg"
+            aria-label="Baixar currículo em PDF"
+          >
+            {t('hero.downloadCV')}
+          </Button>
+          
+          <Button
+            href="/articles"
+            variant="outline"
+            size="lg"
+            aria-label="Ver artigos técnicos"
+            className="hover:bg-accent/30"
+          >
+            📚 Conteúdos
+          </Button>
+        </div>
       </div>
 
       {/* Flecha pulsante para baixo */}

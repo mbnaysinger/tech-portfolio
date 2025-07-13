@@ -2,16 +2,14 @@
 "use client";
 
 import React from "react";
-import SocialLinks from "../atoms/SocialLinks";
+import ArticleNavigation from "../../atoms/ArticleNavigation";
 
 const CloudflareArticle = () => {
   return (
     <div className="relative min-h-screen w-full">
       
-      {/* Ícones de redes sociais */}
-      <div className="absolute top-6 left-6 z-50">
-        <SocialLinks iconSize={20} />
-      </div>
+      {/* Navegação */}
+      <ArticleNavigation showBackToArticles={true} />
 
       {/* Marca d'água de fundo */}
       <div className="fixed inset-0 flex items-center justify-center pointer-events-none select-none z-0">

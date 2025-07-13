@@ -1,5 +1,6 @@
 import React from "react";
-import { Linkedin, GithubIcon, Twitter, MessageCircleMore } from "lucide-react";
+import { Linkedin, GithubIcon, Twitter, MessageCircleMore, Home } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 interface SocialLinksProps {
   className?: string;
@@ -7,6 +8,7 @@ interface SocialLinksProps {
 }
 
 const SocialLinks = ({ className = "", iconSize = 24 }: SocialLinksProps) => {
+  const pathname = usePathname();
   const socialLinks = [
     {
       icon: <Linkedin size={iconSize} />,
@@ -32,6 +34,15 @@ const SocialLinks = ({ className = "", iconSize = 24 }: SocialLinksProps) => {
 
   return (
     <div className={`flex space-x-4 ${className}`}>
+      {pathname !== "/" && (
+        <a
+          href="/"
+          className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 backdrop-blur-glass border border-white/10 text-accent hover:border-accent/50 hover:scale-110 transition-all duration-300"
+          aria-label="Ir para a página inicial"
+        >
+          <Home size={iconSize} />
+        </a>
+      )}
       {socialLinks.map((social, index) => (
         <a
           key={index}

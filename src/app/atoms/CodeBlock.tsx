@@ -2,7 +2,6 @@ import React from "react";
 
 interface CodeBlockProps {
   children: React.ReactNode;
-  language?: string;
   title?: string;
   showTerminalButtons?: boolean;
   className?: string;
@@ -25,7 +24,6 @@ interface SimpleCodeBlockProps {
 // Componente para blocos de código estilo terminal (com botões coloridos)
 export const TerminalCodeBlock: React.FC<TerminalCodeBlockProps> = ({
   children,
-  language = "bash",
   title,
   className = ""
 }) => {
@@ -51,7 +49,6 @@ export const TerminalCodeBlock: React.FC<TerminalCodeBlockProps> = ({
 // Componente para blocos de código simples (sem botões de terminal)
 export const SimpleCodeBlock: React.FC<SimpleCodeBlockProps> = ({
   children,
-  language = "yaml",
   title,
   className = ""
 }) => {
@@ -72,21 +69,20 @@ export const SimpleCodeBlock: React.FC<SimpleCodeBlockProps> = ({
 // Componente genérico que decide qual tipo usar baseado nas props
 export const CodeBlock: React.FC<CodeBlockProps> = ({
   children,
-  language = "bash",
   title,
   showTerminalButtons = false,
   className = ""
 }) => {
   if (showTerminalButtons) {
     return (
-      <TerminalCodeBlock language={language} title={title} className={className}>
+      <TerminalCodeBlock title={title} className={className}>
         {children}
       </TerminalCodeBlock>
     );
   }
 
   return (
-    <SimpleCodeBlock language={language} title={title} className={className}>
+    <SimpleCodeBlock title={title} className={className}>
       {children}
     </SimpleCodeBlock>
   );

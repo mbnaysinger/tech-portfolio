@@ -3,7 +3,7 @@
 import React, { useState } from "react";
 import Heading from "../atoms/Heading";
 import Button from "../atoms/Button";
-import { Send } from "lucide-react";
+import { Send, CheckCircle, AlertCircle } from "lucide-react";
 import { useI18n } from "../i18n/context";
 
 const ContactSection = () => {
@@ -16,12 +16,52 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // Aqui você pode implementar o envio do formulário
-    console.log("Formulário enviado:", formData);
-    // Reset do formulário
-    setFormData({ name: "", email: "", subject: "", message: "" });
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...formData,
+          clientToken: process.env.NEXT_PUBLIC_API_CLIENT_TOKEN,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (response.ok) {
+        setSubmitStatus({
+          type: 'success',
+          message: result.message || 'Mensagem enviada com sucesso!'
+        });
+        setFormData({ name: "", email: "", subject: "", message: "" });
+      } else {
+        setSubmitStatus({
+          type: 'error',
+          message: result.message || 'Erro ao enviar mensagem. Tente novamente.'
+        });
+      }
+    } catch (error) {
+      console.error('Erro ao enviar formulário:', error);
+      setSubmitStatus({
+        type: 'error',
+        message: 'Erro de conexão. Verifique sua internet e tente novamente.'
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -113,6 +153,22 @@ const ContactSection = () => {
             </h3>
             
             <form onSubmit={handleSubmit} className="space-y-6">
+              {/* Status de envio */}
+              {submitStatus.type && (
+                <div className={`p-4 rounded-lg flex items-center space-x-3 ${
+                  submitStatus.type === 'success' 
+                    ? 'bg-green-500/20 border border-green-500/30 text-green-300' 
+                    : 'bg-red-500/20 border border-red-500/30 text-red-300'
+                }`}>
+                  {submitStatus.type === 'success' ? (
+                    <CheckCircle size={20} className="text-green-400" />
+                  ) : (
+                    <AlertCircle size={20} className="text-red-400" />
+                  )}
+                  <span>{submitStatus.message}</span>
+                </div>
+              )}
+
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-text-light mb-2">
@@ -189,9 +245,19 @@ const ContactSection = () => {
                 size="lg"
                 aria-label="Enviar mensagem"
                 className="w-full"
+                disabled={isSubmitting}
               >
-                <Send size={20} className="mr-2" />
-                {t('contact.send')}
+                {isSubmitting ? (
+                  <div className="flex items-center">
+                    <div className="animate-spin rounded-full h-5 w-5 border-b-2 border-white mr-2"></div>
+                    Enviando...
+                  </div>
+                ) : (
+                  <>
+                    <Send size={20} className="mr-2" />
+                    {t('contact.send')}
+                  </>
+                )}
               </Button>
             </form>
           </div>

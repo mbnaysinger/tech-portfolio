@@ -9,7 +9,7 @@ export default function ArticlesPage() {
     <main className="bg-bg text-text-light min-h-screen relative">
       <ArticleNavigation />
       <div className="max-w-4xl mx-auto px-4 py-8">
-        <h1 className="text-4xl font-bold text-accent mb-8">📚 Conteúdos Técnicos (ou não)</h1>
+        <h1 className="text-4xl font-bold text-accent mb-8">📚 Conteúdos Técnicos (ou não 🤪)</h1>
         
         <div className="grid gap-6">
           {articles.map((article) => (

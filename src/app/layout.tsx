@@ -20,7 +20,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfólio Full-Stack Developer",
+  title: "Maike Naysinger Borges",
   description: "Portfólio profissional de desenvolvimento full-stack",
 };
 

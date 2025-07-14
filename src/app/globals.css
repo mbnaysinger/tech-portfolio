@@ -29,6 +29,7 @@ body {
   color: var(--foreground);
   font-family: var(--font-inter), var(--font-geist-sans), system-ui, sans-serif;
   line-height: 1.5;
+  text-align: justify;
 }
 
 /* Scrollbar hide */

@@ -43,7 +43,9 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl text-text-light mb-14" style={{ fontFamily: 'var(--font-inter), var(--font-geist-sans), system-ui, sans-serif' }}>
-          {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>, {t('hero.title')}
+          {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>.
+          <br />
+          {t('hero.title')}
         </h1>
 
         <div className="flex flex-col sm:flex-row gap-4 items-center">

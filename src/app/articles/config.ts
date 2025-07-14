@@ -9,11 +9,11 @@ export interface Article {
 
 export const articles: Article[] = [
   {
-    slug: "cloudflare-tunnel",
-    title: "🚀 Cloudflare Tunnel: O Fim do Ngrok?",
-    description: "Expondo aplicações locais com segurança e controle usando Cloudflare Tunnel",
-    date: "2024-01-15",
-    tags: ["cloudflare", "docker", "desenvolvimento", "segurança"],
+    slug: "cloudflare",
+    title: "🐳 Docker + ☁️ Cloudflare Tunnel",
+    description: "Exponha Qualquer App Local em 30 Segundos",
+    date: "14-07-2025",
+    tags: ["cloudflare", "docker", "desenvolvimento", "segurança", "devops"],
     featured: true
   }
   // Futuros artigos serão adicionados aqui

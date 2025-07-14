@@ -10,7 +10,7 @@ const CloudflareArticle = () => {
     <div className="relative min-h-screen w-full">
       
       {/* Navegação */}
-      <ArticleNavigation showBackToArticles={true} />
+      <ArticleNavigation showBackToArticles={true} showHomeButton={false} />
 
       {/* Container principal */}
       <div className="relative z-10 max-w-4xl mx-auto px-2 sm:px-4 md:px-8 py-8 pt-24 md:pt-24 sm:pt-8">
@@ -211,7 +211,7 @@ const CloudflareArticle = () => {
                     <td className="border border-gray-600 p-3">1 comando Docker</td>
                     <td className="border border-gray-600 p-3">Download + configuração</td>
                   </tr>
-                  <tr className="border-b border-gray-700">
+                  <tr className="border-b border-gray-700 bg-gray-700/30">
                     <td className="border border-gray-600 p-3"><strong className="text-accent">Segurança</strong></td>
                     <td className="border border-gray-600 p-3">WAF + DDoS Protection + Zero Trust integrados + TLS automático</td>
                     <td className="border border-gray-600 p-3">TLS fornecido, mas menos camadas de segurança</td>

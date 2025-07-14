@@ -5,13 +5,15 @@ import SocialLinks from "./SocialLinks";
 
 interface ArticleNavigationProps {
   showBackToArticles?: boolean;
+  showHomeButton?: boolean;
 }
 
-const ArticleNavigation = ({ showBackToArticles = false }: ArticleNavigationProps) => {
+const ArticleNavigation = ({ showBackToArticles = false, showHomeButton = true }: ArticleNavigationProps) => {
   return (
     <>
       {/* Navegação à esquerda */}
       <div className="absolute top-6 left-6 z-50 flex gap-3">
+        {showHomeButton && (
         <Link
           href="/"
           className="flex items-center justify-center w-12 h-12 rounded-full bg-white/5 backdrop-blur-glass border border-white/10 text-accent hover:border-accent/50 hover:scale-110 transition-all duration-300"
@@ -19,6 +21,7 @@ const ArticleNavigation = ({ showBackToArticles = false }: ArticleNavigationProp
         >
           <Home size={20} />
         </Link>
+        )}
         
         {showBackToArticles && (
           <Link

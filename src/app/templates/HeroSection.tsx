@@ -3,8 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import Button from "../atoms/Button";
-import LanguageSelector from "../atoms/LanguageSelector";
-import SocialLinks from "../atoms/SocialLinks";
+import HomeNavigation from "../atoms/HomeNavigation";
 import { ChevronDown } from "lucide-react";
 import { useI18n } from "../i18n/context";
 
@@ -23,15 +22,7 @@ const HeroSection = () => {
       className="relative min-h-screen w-full flex items-center justify-center bg-bg text-text-light overflow-hidden"
       aria-label="Seção de introdução do portfólio"
     >
-      {/* Seletor de idioma */}
-      <div className="absolute top-6 right-6 z-50">
-        <LanguageSelector />
-      </div>
-      
-      {/* Ícones de redes sociais */}
-      <div className="absolute top-6 left-6 z-50">
-        <SocialLinks iconSize={20} />
-      </div>
+      <HomeNavigation />
       {/* Overlay escuro */}
       <div className="absolute inset-0 bg-overlay z-10" />
       {/* Conteúdo */}
@@ -52,18 +43,32 @@ const HeroSection = () => {
         </div>
         
         <h1 className="font-bold text-4xl md:text-6xl lg:text-7xl text-text-light mb-14" style={{ fontFamily: 'var(--font-inter), var(--font-geist-sans), system-ui, sans-serif' }}>
-          {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>, {t('hero.title')}
+          {t('hero.greeting')} <span className="text-accent">{t('hero.name')}</span>.
+          <br />
+          {t('hero.title')}
         </h1>
 
-        <Button
-          href="/cv.pdf"
-          download
-          variant="primary"
-          size="lg"
-          aria-label="Baixar currículo em PDF"
-        >
-          {t('hero.downloadCV')}
-        </Button>
+        <div className="flex flex-col sm:flex-row gap-4 items-center">
+          <Button
+            href="/cv.pdf"
+            download
+            variant="primary"
+            size="lg"
+            aria-label="Baixar currículo em PDF"
+          >
+            {t('hero.downloadCV')}
+          </Button>
+          
+          <Button
+            href="/articles"
+            variant="outline"
+            size="lg"
+            aria-label="Ver artigos técnicos"
+            className="hover:bg-accent/30"
+          >
+            📚 Conteúdos
+          </Button>
+        </div>
       </div>
 
       {/* Flecha pulsante para baixo */}

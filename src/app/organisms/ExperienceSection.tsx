@@ -79,7 +79,7 @@ const ExperienceSection = () => {
             {experiences.map((experience, index) => (
               <div
                 key={index}
-                className="flex-shrink-0 w-full md:w-96 snap-start"
+                className="flex-shrink-0 w-full md:w-96 snap-start text-left"
               >
                 <TimelineItem
                   year={experience.year}

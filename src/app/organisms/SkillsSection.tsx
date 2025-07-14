@@ -43,7 +43,7 @@ const SkillsSection = () => {
       color: "#339933",
     },
     {
-      name: "PHP/Laravl",
+      name: "PHP/Laravel",
       icon: <Code2 size={24} />,
       proficiency: 40,
       color: "#3178C6",

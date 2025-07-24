@@ -9,6 +9,14 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "kafka",
+    title: "🛵 Apache Kafka" ,
+    description: `Construindo o "iFood dos dados" com Docker e Java`,
+    date: "23-07-2025",
+    tags: ["kafka", "docker", "java", "spring-boot", "gradle", "desenvolvimento"],
+    featured: true
+  },
+  {
     slug: "cloudflare",
     title: "🐳 Docker + ☁️ Cloudflare Tunnel",
     description: "Exponha Qualquer App Local em 30 Segundos",

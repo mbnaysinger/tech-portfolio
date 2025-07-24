@@ -180,7 +180,7 @@ const KafkaDeliveryArticle = () => {
               {'        '}<span className="text-pink-300">spring.json.trusted.packages:</span> <span className="text-green-300">"com.delivery.model"</span>{'\n\n'}
 
               <span className="text-purple-300">server:</span>{'\n'}
-              {'  '}<span className="text-pink-300">port:</span> <span className="text-green-300">8080</span>{'\n\n'}
+              {'  '}<span className="text-pink-300">port:</span> <span className="text-green-300">8082</span> <span className="text-gray-400"># para não conflitar com kafka-ui</span>{'\n\n'}
 
               <span className="text-purple-300">logging:</span>{'\n'}
               {'  '}<span className="text-purple-300">level:</span>{'\n'}

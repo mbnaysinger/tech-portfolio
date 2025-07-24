@@ -205,14 +205,14 @@ const KafkaDeliveryArticle = () => {
               {'    '}<span className="text-purple-300">@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")</span>{'\n'}
               {'    '}<span className="text-blue-300">private</span> <span className="text-white">LocalDateTime timestamp</span>;<span className="text-white"></span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Construtor padrão</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Construtor padrão'}</span>{'\n'}
               {'    '}<span className="text-blue-300">public</span> <span className="text-yellow-300">Pedido</span>() <span className="text-white">{'{'}</span>{'\n'}
               {'        '}<span className="text-blue-300">this</span>.id = UUID.randomUUID().toString();<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-blue-300">this</span>.timestamp = LocalDateTime.now();<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-blue-300">this</span>.status = <span className="text-green-300">"CRIADO"</span>;<span className="text-white"></span>{'\n'}
               {'    '}<span className="text-white">{'}'}</span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Getters e Setters...</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Getters e Setters...'}</span>{'\n'}
               <span className="text-white">{'}'}</span>
             </TerminalCodeBlock>
 
@@ -240,7 +240,7 @@ const KafkaDeliveryArticle = () => {
               {'    '}<span className="text-purple-300">@Autowired</span>{'\n'}
               {'    '}<span className="text-blue-300">private</span> <span className="text-white">KafkaTemplate&lt;String, Object&gt; kafkaTemplate</span>;<span className="text-white"></span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Nosso "cardápio" de restaurantes</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Nosso "cardápio" de restaurantes'}</span>{'\n'}
               {'    '}<span className="text-blue-300">private final</span> <span className="text-white">List&lt;String&gt; restaurantes = Arrays.asList(</span>{'\n'}
               {'        '}<span className="text-green-300">"Pizza Express"</span>, <span className="text-green-300">"Burger King"</span>, <span className="text-green-300">"Sushi House"</span>, <span className="text-green-300">"Taco Bell"</span>{'\n'}
               {'    '});<span className="text-white"></span>{'\n\n'}
@@ -252,10 +252,10 @@ const KafkaDeliveryArticle = () => {
               {'        '}<span className="text-white">pedido.setItem(item)</span>;<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-white">pedido.setPreco(preco)</span>;<span className="text-white"></span>{'\n\n'}
 
-              {'        '}<span className="text-gray-400">// Determina o "tipo de comida" (topic) baseado no restaurante</span>{'\n'}
+              {'        '}<span className="text-gray-400">{'// Determina o "tipo de comida" (topic) baseado no restaurante'}</span>{'\n'}
               {'        '}<span className="text-white">String topicName = determinarTopic(restaurante)</span>;<span className="text-white"></span>{'\n\n'}
 
-              {'        '}<span className="text-gray-400">// Envia o pedido para a "central de delivery" (Kafka)</span>{'\n'}
+              {'        '}<span className="text-gray-400">{'// Envia o pedido para a "central de delivery" (Kafka)'}</span>{'\n'}
               {'        '}<span className="text-white">kafkaTemplate.send(topicName, pedido.getId(), pedido)</span>;<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-white">System.out.println(</span><span className="text-green-300">"Pedido enviado: "</span> + pedido.getId() + <span className="text-green-300">" para topic: "</span> + topicName);<span className="text-white"></span>{'\n'}
               {'    '}<span className="text-white">{'}'}</span>{'\n\n'}
@@ -281,21 +281,21 @@ const KafkaDeliveryArticle = () => {
               <span className="text-purple-300">@Service</span>{'\n'}
               <span className="text-blue-300">public class</span> <span className="text-yellow-300">EntregadorService</span> <span className="text-white">{'{'}</span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Entregadores especializados em Pizza</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Entregadores especializados em Pizza'}</span>{'\n'}
               {'    '}<span className="text-purple-300">@KafkaListener(topics = "pedidos-pizza", groupId = "entregadores-pizza")</span>{'\n'}
               {'    '}<span className="text-blue-300">public void</span> <span className="text-yellow-300">processarPedidoPizza</span>(Pedido pedido) <span className="text-white">{'{'}</span>{'\n'}
               {'        '}<span className="text-white">System.out.println(</span><span className="text-green-300">"Entregador de Pizza pegou pedido: "</span> + pedido.getId());<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-white">simularEntrega(pedido, </span><span className="text-green-300">"Pizza"</span>);<span className="text-white"></span>{'\n'}
               {'    '}<span className="text-white">{'}'}</span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Entregadores especializados em Burger</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Entregadores especializados em Burger'}</span>{'\n'}
               {'    '}<span className="text-purple-300">@KafkaListener(topics = "pedidos-burger", groupId = "entregadores-burger")</span>{'\n'}
               {'    '}<span className="text-blue-300">public void</span> <span className="text-yellow-300">processarPedidoBurger</span>(Pedido pedido) <span className="text-white">{'{'}</span>{'\n'}
               {'        '}<span className="text-white">System.out.println(</span><span className="text-green-300">"Entregador de Burger pegou pedido: "</span> + pedido.getId());<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-white">simularEntrega(pedido, </span><span className="text-green-300">"Burger"</span>);<span className="text-white"></span>{'\n'}
               {'    '}<span className="text-white">{'}'}</span>{'\n\n'}
 
-              {'    '}<span className="text-gray-400">// Entregadores especializados em Sushi</span>{'\n'}
+              {'    '}<span className="text-gray-400">{'// Entregadores especializados em Sushi'}</span>{'\n'}
               {'    '}<span className="text-purple-300">@KafkaListener(topics = "pedidos-sushi", groupId = "entregadores-sushi")</span>{'\n'}
               {'    '}<span className="text-blue-300">public void</span> <span className="text-yellow-300">processarPedidoSushi</span>(Pedido pedido) <span className="text-white">{'{'}</span>{'\n'}
               {'        '}<span className="text-white">System.out.println(</span><span className="text-green-300">"Entregador de Sushi pegou pedido: "</span> + pedido.getId());<span className="text-white"></span>{'\n'}
@@ -304,7 +304,7 @@ const KafkaDeliveryArticle = () => {
 
               {'    '}<span className="text-blue-300">private void</span> <span className="text-yellow-3000">simularEntrega</span>(Pedido pedido, String tipo) <span className="text-white">{'{'}</span>{'\n'}
               {'        '}<span className="text-blue-3000">try</span> <span className="text-white">{'{'}</span>{'\n'}
-              {'            '}<span className="text-gray-400">// Simula tempo de entrega (diferentes para cada tipo)</span>{'\n'}
+              {'            '}<span className="text-gray-400">{'// Simula tempo de entrega (diferentes para cada tipo)'}</span>{'\n'}
               {'            '}<span className="text-white">int tempoEntrega = tipo.equals(</span><span className="text-green-300">"Sushi"</span>) ? 3000 : 2000;<span className="text-white"></span>{'\n'}
               {'            '}<span className="text-white">Thread.sleep(tempoEntrega)</span>;<span className="text-white"></span>{'\n\n'}
 
@@ -341,7 +341,7 @@ const KafkaDeliveryArticle = () => {
 
               {'    '}<span className="text-purple-300">@PostMapping("/pedidos-massa")</span>{'\n'}
               {'    '}<span className="text-blue-300">public</span> <span className="text-white">ResponseEntity&lt;String&gt; criarPedidosEmMassa() </span><span className="text-white">{'{'}</span>{'\n'}
-              {'        '}<span className="text-gray-400">// Simula rush hour!</span>{'\n'}
+              {'        '}<span className="text-gray-400">{'// Simula rush hour!'}</span>{'\n'}
               {'        '}<span className="text-white">List&lt;String&gt; clientes = Arrays.asList(</span><span className="text-green-300">"João"</span>, <span className="text-green-300">"Maria"</span>, <span className="text-green-300">"Pedro"</span>, <span className="text-green-300">"Ana"</span>);<span className="text-white"></span>{'\n'}
               {'        '}<span className="text-white">Random random = </span><span className="text-blue-3000">new</span> <span className="text-white">Random()</span>;<span className="text-white"></span>{'\n\n'}
 

@@ -9,59 +9,59 @@ import { GithubIcon, Play } from "lucide-react";
 const ProjectsSection = () => {
   const projects = [
     {
-      title: "E-commerce Platform",
-      description: "Plataforma completa de e-commerce com carrinho de compras, pagamentos, painel administrativo e sistema de usuários.",
-      image: "/project.jpg",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-      demoUrl: "/",
-      githubUrl: "/",
+      title: "Microsserviço de Votação",
+      description: "Solução desenvolvida para votação de pautas, dividida por sessões. Regras aplicadas para fechamento de sessões, validação de CPF e facilidade de auditoria de dados",
+      image: "/voting-solution.png",
+      technologies: ["Java", "Spring Boot", "MongoDB", "Docker", "K6", "Testcontainers", "Clean Architecture", "Gradle"],
+      demoUrl: null,
+      githubUrl: "https://github.com/mbnaysinger/voting-solution",
       featured: true,
     },
     {
-      title: "Task Management App",
-      description: "Aplicação de gerenciamento de tarefas com drag-and-drop, notificações em tempo real e colaboração em equipe.",
-      image: "/project.jpg",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL", "Redis"],
-      demoUrl: "/",
-      githubUrl: "/",
+      title: "Allocation Team",
+      description: "Aplicação de gerenciamento de tarefas semanal com drag-and-drop, com gestão de demandas de projetos, melhorias e sustentações.",
+      image: "/allocation-team.png",
+      technologies: ["React", "Next.js", "Node.js", "MongoDB", "Docker", "Monolito", "Scrum", "Desacoplamento servidor-cliente"],
+      demoUrl: "https://allocation-team.vercel.app/",
+      githubUrl: "https://github.com/mbnaysinger/allocation-team",
       featured: true,
     },
-    {
-      title: "Portfolio Website",
-      description: "Site portfólio responsivo com animações, SEO otimizado e performance de alta qualidade.",
-      image: "/project.jpg",
-      technologies: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Vercel"],
-      demoUrl: "/",
-      githubUrl: "/",
-      featured: false,
-    },
-    {
-      title: "Weather Dashboard",
-      description: "Dashboard meteorológico com dados em tempo real, gráficos interativos e previsões detalhadas.",
-      image: "/project.jpg",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Vite", "Netlify"],
-      demoUrl: "/",
-      githubUrl: "/",
-      featured: false,
-    },
-    {
-      title: "Social Media Clone",
-      description: "Clone de rede social com feed, posts, comentários, likes e sistema de seguidores.",
-      image: "/project.jpg",
-      technologies: ["React Native", "Firebase", "Redux", "Expo", "Google Auth"],
-      demoUrl: "/",
-      githubUrl: "/",
-      featured: false,
-    },
-    {
-      title: "AI Chat Assistant",
-      description: "Assistente de chat com IA integrada, processamento de linguagem natural e interface conversacional.",
-      image: "/project.jpg",
-      technologies: ["React", "OpenAI API", "Node.js", "WebSocket", "Docker"],
-      demoUrl: "/",
-      githubUrl: "/",
-      featured: false,
-    },
+    // {
+    //   title: "Portfolio Website",
+    //   description: "Site portfólio responsivo com animações, SEO otimizado e performance de alta qualidade.",
+    //   image: "/project.jpg",
+    //   technologies: ["Next.js", "TypeScript", "Tailwind CSS", "GSAP", "Vercel"],
+    //   demoUrl: "/",
+    //   githubUrl: "/",
+    //   featured: false,
+    // },
+    // {
+    //   title: "Weather Dashboard",
+    //   description: "Dashboard meteorológico com dados em tempo real, gráficos interativos e previsões detalhadas.",
+    //   image: "/project.jpg",
+    //   technologies: ["Vue.js", "Chart.js", "OpenWeather API", "Vite", "Netlify"],
+    //   demoUrl: "/",
+    //   githubUrl: "/",
+    //   featured: false,
+    // },
+    // {
+    //   title: "Social Media Clone",
+    //   description: "Clone de rede social com feed, posts, comentários, likes e sistema de seguidores.",
+    //   image: "/project.jpg",
+    //   technologies: ["React Native", "Firebase", "Redux", "Expo", "Google Auth"],
+    //   demoUrl: "/",
+    //   githubUrl: "/",
+    //   featured: false,
+    // },
+    // {
+    //   title: "AI Chat Assistant",
+    //   description: "Assistente de chat com IA integrada, processamento de linguagem natural e interface conversacional.",
+    //   image: "/project.jpg",
+    //   technologies: ["React", "OpenAI API", "Node.js", "WebSocket", "Docker"],
+    //   demoUrl: "/",
+    //   githubUrl: "/",
+    //   featured: false,
+    // },
   ];
 
   return (
@@ -126,6 +126,7 @@ const ProjectsSection = () => {
 
                 {/* Botões de ação */}
                 <div className="flex gap-3">
+                  {project.demoUrl && (
                   <Button
                     href={project.demoUrl}
                     variant="primary"
@@ -136,6 +137,7 @@ const ProjectsSection = () => {
                     <Play size={16} className="mr-2" />
                     Demo
                   </Button>
+                  )}
                   <Button
                     href={project.githubUrl}
                     variant="outline"

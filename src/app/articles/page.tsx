@@ -10,7 +10,7 @@ export default function ArticlesPage() {
       <ArticleNavigation />
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-8 pt-24 md:pt-24 sm:pt-8">
         <h1 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-accent mb-6 sm:mb-8">
-        📚 Conteúdos Técnicos (ou não 🤪)
+        📚 Conteúdos Técnicos
         </h1>
         
         <div className="grid gap-4 sm:gap-6">

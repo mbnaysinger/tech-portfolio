@@ -9,6 +9,14 @@ export interface Article {
 
 export const articles: Article[] = [
   {
+    slug: "rag",
+    title: "🔍 Desmistificando o RAG",
+    description: "Usando LLMs para criar sistemas de IA especializados",
+    date: "29-08-2025",
+    tags: ["rag", "desenvolvimento", "ia", "llm", "retrieval-augmented-generation"],
+    featured: true
+  },
+  {
     slug: "kafka",
     title: "🛵 Apache Kafka" ,
     description: `Construindo o "iFood dos dados" com Docker e Java`,

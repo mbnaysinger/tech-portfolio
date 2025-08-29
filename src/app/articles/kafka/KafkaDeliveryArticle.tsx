@@ -13,7 +13,7 @@ const KafkaDeliveryArticle = () => {
       <ArticleNavigation showBackToArticles={true} showHomeButton={false} />
 
       {/* Container principal */}
-      <div className="relative z-10 max-w-4xl mx-auto px-2 sm:px-4 md:px-8 py-8 pt-24 md:pt-24 sm:pt-8">
+      <div className="relative z-10 max-w-6xl mx-auto px-2 sm:px-4 md:px-8 py-8 pt-24 md:pt-24 sm:pt-8">
         <div className="backdrop-blur-sm rounded-2xl shadow-2xl border border-accent/20 p-4 sm:p-8 relative" style={{ backgroundColor: 'rgba(5, 20, 42, 0.95)' }}>
 
           <div className="relative z-10">

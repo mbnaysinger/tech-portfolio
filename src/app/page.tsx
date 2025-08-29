@@ -4,6 +4,7 @@ import EducationSection from "@/app/organisms/EducationSection";
 import SkillsSection from "@/app/organisms/SkillsSection";
 import ExperienceSection from "@/app/organisms/ExperienceSection";
 import ContactSection from "@/app/organisms/ContactSection";
+import ProjectsSection from "./organisms/ProjectsSection";
 
 export default function Home() {
   return (
@@ -13,7 +14,7 @@ export default function Home() {
       <EducationSection />
       <SkillsSection />
       <ExperienceSection />
-      {/* <ProjectsSection /> */}
+      <ProjectsSection />
       <ContactSection />
     </main>
   );
